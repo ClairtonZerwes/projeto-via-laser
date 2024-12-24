@@ -97,16 +97,11 @@ Siga as instruções da ferramenta de build escolhida para compilar e executar o
 ## Estrutura do Projeto
 * **model:** Contém as classes que representam os dados da série, temporadas e episódios.
 * **service:** Contém a lógica para consumir a API e converter os dados.
-* **repository:** Contém as interfaces e implementações para acesso e persistência dos dados no banco de dados (ex: `SerieRepository`).
-* **principal:** Classe principal com a interface do usuário.
-* **utils:** Contém classes utilitárias, como a classe `CodificarURL`.
-
-## Contribuições
-Contribuições são bem-vindas! Para contribuir, por favor, siga estas etapas:
-1. Fork este repositório
-2. Crie uma nova branch
-3. Faça suas alterações
-4. Crie um pull request
+* **controller:** Intermediário entre o modelo e a view.
+* **repositories:** Contém implementações para acesso e persistência dos dados no banco de dados.
+* **view:** Contém interface com usuário.  
+* **principal:** Classe principal com a interface do usuário (a partir daqui será direcionado para outras telas especificas de cadastro/listas na "view").
+* **uteis:** Contém classes utilitárias, como a classe `CodificarURL`.
 
 ## Licença
 Este projeto está licenciado sob a licença [MIT License]
